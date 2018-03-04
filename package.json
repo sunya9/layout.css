@@ -5,7 +5,8 @@
   "devDependencies": {
     "csswring": "^6.0.3",
     "node-sass": "^4.7.2",
-    "stylelint": "^9.1.1"
+    "stylelint": "^9.1.1",
+    "stylelint-config-recommended": "^2.1.0"
   },
   "main": "layout.scss",
   "scripts": {
