@@ -14,6 +14,7 @@
     "lint:fix": "stylelint ./layout.scss --fix",
     "build": "node-sass ./layout.scss ./dist/layout.css",
     "build:watch": "node-sass ./layout.scss ./dist/layout.css -w",
-    "postbuild": "csswring ./dist/layout.css ./dist/layout.min.css"
+    "postbuild": "csswring ./dist/layout.css ./dist/layout.min.css",
+    "test": "npm run lint:fix && npm run lint"
   }
 }
