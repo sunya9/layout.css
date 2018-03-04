@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="layout-base">
 
 <head>
   <meta charset="UTF-8">
@@ -13,6 +13,17 @@
     input:not(:checked)~#contents {
       display: none;
     }
+
+    .pane {
+      background: #ddd;
+      padding: 1rem;
+      border-radius: 2px;
+    }
+
+    header,
+    footer {
+      margin: 2rem 0;
+    }
   </style>
 </head>
 
@@ -20,47 +31,58 @@
   <div class="layout-flexbox layout-min-fullheight">
     <header>
       <div class="container">
-        <h1>Holygrail</h1>
+        <div class="pane">
+          <h1>Holygrail</h1>
+        </div>
       </div>
     </header>
     <main class="layout-flexible">
-      <div class="container">
-        <div class="row">
+      <div class="container layout-h100">
+        <div class="row layout-h100">
           <div class="column">
-            <h2>Left pane</h2>
-          </div>
-          <div class="column">
-            <h1>Main column</h1>
-            <p>Thanks milligram for grid system.</p>
-            <input type="checkbox" id="checkbox">
-            <label class="label-inline" for="checkbox">toggle long contents</label>
-            <div id="contents">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
-                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
-                obcaecati atque.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
-                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
-                obcaecati atque.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
-                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
-                obcaecati atque.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
-                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
-                obcaecati atque.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
-                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
-                obcaecati atque.</p>
+            <div class="pane layout-h100">
+              <h2>Left pane</h2>
             </div>
           </div>
-          <div class="column">
-            <h2>Right pane</h2>
+          <div class="column layout-h100">
+            <div class="pane layout-h100">
+
+              <h1>Main column</h1>
+              <p>Thanks milligram for grid system.</p>
+              <input type="checkbox" id="checkbox">
+              <label class="label-inline" for="checkbox">toggle long contents</label>
+              <div id="contents">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                  blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                  obcaecati atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                  blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                  obcaecati atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                  blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                  obcaecati atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                  blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                  obcaecati atque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                  blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                  obcaecati atque.</p>
+              </div>
+            </div>
+          </div>
+          <div class="column layout-h100">
+            <div class="pane layout-h100">
+              <h2>Right pane</h2>
+            </div>
           </div>
         </div>
       </div>
     </main>
     <footer>
       <div class="container">
-        <p>sticky footer</p>
+        <div class="pane">
+          <p>sticky footer</p>
+        </div>
       </div>
     </footer>
   </div>
