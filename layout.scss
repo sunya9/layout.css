@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-$prefix: layout !default;
+$layout-css-prefix: layout !default;
 
-.#{$prefix} {
+.#{$layout-css-prefix} {
   &-fullheight {
     &,
     > body {
