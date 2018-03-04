@@ -1,0 +1,43 @@
+@charset 'utf-8';
+
+$prefix: layout !default;
+
+.#{$prefix} {
+  &-fullheight {
+    &,
+    > body {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  &-max-fullheight {
+    max-height: 100vh;
+    height: 100vh;
+  }
+  &-min-fullheight {
+    min-height: 100vh;
+  }
+  &-h100 {
+    height: 100%;
+  }
+  &-flexbox {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100%;
+  }
+  &-scrollable {
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  &-flexible {
+    flex: 1;
+    position: relative;
+  }
+}

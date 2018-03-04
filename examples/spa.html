@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="layout-fullheight">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <link rel="stylesheet" href="../dist/layout.css">
+  <title>Example: Single page application</title>
+  <style>
+    input:not(:checked)~.content {
+      display: none;
+    }
+
+    .pane {
+      background: #ccc;
+      padding: 1rem;
+    }
+
+    header,
+    footer {
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout-flexbox layout-max-fullheight">
+    <header>
+      <div class="container">
+        <div class="pane">
+          <h1>Single page application</h1>
+        </div>
+      </div>
+    </header>
+    <main class="layout-flexible">
+      <div class="container layout-h100">
+        <div class="row layout-h100">
+          <div class="column column-25">
+            <div class="layout-flexbox pane">
+              <div>
+                <h2>Sidebar</h2>
+              </div>
+              <div class="layout-flexible">
+                <div class="layout-scrollable">
+                  <input type="checkbox" id="content-0" checked>
+                  <label class="label-inline" for="content-0">toggle long contents</label>
+                  <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia ad minus.
+                      Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium, blanditiis
+                      laborum?
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia ad minus.
+                      Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium, blanditiis
+                      laborum?
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia ad minus.
+                      Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium, blanditiis
+                      laborum?
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia ad minus.
+                      Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium, blanditiis
+                      laborum?
+                    </p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia ad minus.
+                      Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium, blanditiis
+                      laborum?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column column-75">
+            <div class="layout-flexbox">
+
+              <h1>Main column</h1>
+              <p>Thanks milligram for grid system.</p>
+              <div class="layout-flexible">
+
+                <div class="row layout-h100">
+                  <div class="column column-50">
+                    <div class="pane layout-flexbox">
+                      <div>
+                        <h2>
+                          pane 1
+                        </h2>
+                      </div>
+                      <div class="layout-flexible">
+                        <div class="layout-scrollable">
+                          <input type="checkbox" id="content-1" checked>
+                          <label class="label-inline" for="content-1">toggle long contents</label>
+                          <div class="content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column column-50">
+                    <div class="pane layout-flexbox">
+                      <div>
+                        <h2>
+                          pane 2
+                        </h2>
+                      </div>
+                      <div class="layout-flexible">
+                        <div class="layout-scrollable">
+                          <input type="checkbox" id="content-2">
+                          <label class="label-inline" for="content-2">toggle long contents</label>
+                          <div class="content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, labore quae corrupti unde quia
+                              ad minus. Earum beatae soluta aperiam assumenda reprehenderit autem at incidunt amet sit accusantium,
+                              blanditiis laborum?
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="pane">
+          <p>sticky statusbar</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

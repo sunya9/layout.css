@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+  <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+  <link rel="stylesheet" href="../dist/layout.css">
+  <title>Example: Holygrail</title>
+  <style>
+    input:not(:checked)~#contents {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout-flexbox layout-min-fullheight">
+    <header>
+      <div class="container">
+        <h1>Holygrail</h1>
+      </div>
+    </header>
+    <main class="layout-flexible">
+      <div class="container">
+        <div class="row">
+          <div class="column">
+            <h2>Left pane</h2>
+          </div>
+          <div class="column">
+            <h1>Main column</h1>
+            <p>Thanks milligram for grid system.</p>
+            <input type="checkbox" id="checkbox">
+            <label class="label-inline" for="checkbox">toggle long contents</label>
+            <div id="contents">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                obcaecati atque.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                obcaecati atque.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                obcaecati atque.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                obcaecati atque.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut labore inventore fugit vel, quam delectus
+                blanditiis? Praesentium natus velit dicta eligendi nulla deleniti totam impedit doloremque, accusantium,
+                obcaecati atque.</p>
+            </div>
+          </div>
+          <div class="column">
+            <h2>Right pane</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <p>sticky footer</p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
