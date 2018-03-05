@@ -3,13 +3,14 @@
 $layout-css-prefix: layout !default;
 
 .#{$layout-css-prefix} {
-  &-fullheight {
+  &-base {
     &,
     > body {
       height: 100%;
-      width: 100%;
-      overflow: hidden;
     }
+  }
+  &-non-scrollable {
+    overflow: hidden;
   }
   &-max-fullheight {
     max-height: 100vh;
