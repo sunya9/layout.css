@@ -1,7 +1,8 @@
-.layout-fullheight,
-.layout-fullheight > body {
-  height: 100%;
-  width: 100%;
+.layout-base,
+.layout-base > body {
+  height: 100%; }
+
+.layout-non-scrollable {
   overflow: hidden; }
 
 .layout-max-fullheight {
